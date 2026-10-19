@@ -7,12 +7,11 @@ A fully localized, private, and containerized AI agent environment orchestrated 
 
 ## 💻 System Specifications
 * **Machine:** MacBook Air (Apple Silicon / M-series or compatible)
-* **Unified Memory / RAM:** 3.8 GB / 4 GB
+* **Unified Memory / RAM:** 7.8 GB / 8 GB
 * **Containerization:** Docker & Docker Compose
 * **Orchestrated Models:**
   1. `llama3.2:1b` (Lightweight general reasoning)
-  2. `qwen2.5:1.5b` (Precise coding and direct instruction following)
-  3. `phi3:mini` (Alternative compact model)
+  2. `phi3:mini` (Alternative compact model)
 
 ---
 
@@ -76,7 +75,6 @@ Access the Ollama container and pull the desired small-scale models:
 
 ```bash
 docker exec -it ollama ollama pull llama3.2:1b
-docker exec -it ollama ollama pull qwen2.5:1.5b
 docker exec -it ollama ollama pull phi3:mini
 
 ```
@@ -145,7 +143,6 @@ docker compose up -d
 4. **Re-download Models (Ollama Data is Local):** Since Docker volumes are local to each machine, pull the models again on the new laptop:
 ```bash
 docker exec -it ollama ollama pull llama3.2:1b
-docker exec -it ollama ollama pull qwen2.5:1.5b
 
 ```
 
